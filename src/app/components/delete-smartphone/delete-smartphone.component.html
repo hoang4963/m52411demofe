@@ -1,0 +1,21 @@
+<h1>Xoá danh mục sản phẩm</h1>
+<form [formGroup]="smartphoneForm" (ngSubmit)="deleteSmartphone(id)">
+  <table>
+    <tr>
+      <td>Producer:</td>
+      <td><input type="text" formControlName="producer"></td>
+    </tr>
+    <tr>
+      <td>Price:</td>
+      <td><input type="number" formControlName="price"></td>
+    </tr>
+    <tr>
+      <td>Model:</td>
+      <td><input type="text" formControlName="model"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Xoá</button></td>
+    </tr>
+  </table>
+</form>
